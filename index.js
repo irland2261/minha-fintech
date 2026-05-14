@@ -13,7 +13,7 @@ app.post("/send", async (req, res) => {
 
   try {
     const response = await axios.post(
-      `https://graph.facebook.com/v19.0/${process.env.PHONE_NUMBER_ID}/messages`,
+      `https://graph.facebook.com/v19.0/${process.env.1307373424706833}/messages`,
       {
         messaging_product: "whatsapp",
         to: number,
@@ -22,7 +22,7 @@ app.post("/send", async (req, res) => {
       },
       {
         headers: {
-          Authorization: `Bearer ${process.env.TOKEN}`,
+          Authorization: `Bearer ${process.env.EAAOH3cLVZCwYBRbsG9MPPfQOAE2zRkgaZB5qKEIGz5tonR3LH3ZASZBRBK4sCtK2cIPhkQeAurnE3pZBjnlfZAw2pVHhfy3LdhUTbclQBPnXekn9fZBbr5j5yzAsfZAZCKjczcsKOslPBMXZA5CzzSCuHzdsZB4uUrtTXOmZAACVHZBYJcvPhaIpgyfq99aHfvibUZANyHtzA86OAClZCE6kFcZBLbwIqFLOft4pDQLWrSMxS53EhroZAsYCYg9N2V0Ul7n5I9kiVo5J4dVnIhZA4LqTqETNAC}`,
           "Content-Type": "application/json"
         }
       }
