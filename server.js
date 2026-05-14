@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 // carteira simples
-let saldo = 1000;
+let saldo = 10;
 
 // pagar
 app.post("/pay", (req, res) => {
